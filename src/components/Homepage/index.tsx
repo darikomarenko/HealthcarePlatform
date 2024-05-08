@@ -54,17 +54,16 @@ export default function Homepage() {
 
       <div className={style.premium__section_background}>
         <div className={style.premium__section}>
-          <h4 className={style.premium__title}>Go Health Link Premium</h4>
-          <p className={style.premium__title}>
-            Copy Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula
-            eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes,
-            nascetur ridiculus
+          <h4 className={style.premium__title}>Получить Health Link Premium</h4>
+          <p className={style.premium__text}>
+            Получите премиум-доступ к платформе. Неограниченное количество консультаций в месяц.
+            Ответ врача в течение 24 часов. Помощь в расшифровке анализов.
           </p>
-          <h4 className={style.premium__price}>Rs. 2000 / Month</h4>
+          <h4 className={style.premium__price}> 2000руб / месяц</h4>
 
           <ul>
             <li className={style.premium__btn}>
-              <a href="#">Buy Now</a>
+              <a href="#">Купить доступ</a>
             </li>
           </ul>
         </div>

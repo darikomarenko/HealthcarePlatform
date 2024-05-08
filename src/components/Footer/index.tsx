@@ -8,9 +8,9 @@ export default function Footer() {
       <div className={style.footer__line}></div>
       <div className={style.footer__section}>
         <nav className={style.footer__list}>
-          <a href="!#">Home</a>
-          <a href="!#">About</a>
-          <a href="!#">Contact</a>
+          <a href="!#">На главную</a>
+          <a href="!#">О нас</a>
+          <a href="!#">Связаться с нами</a>
         </nav>
         <div className={style.footer__media}>
           <a href="!#">
