@@ -1,0 +1,274 @@
+/* Fonts: */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap&family=Roboto:wght@400;500&display=swap');
+
+/* font-family: 'Inter', sans-serif;
+font-family: 'Roboto', sans-serif; */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Patient Registration Page */
+body {
+  font-size: 18px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  min-width: 1420px;
+  height: 100vh;
+  /* background: linear-gradient(to right, #ffffff 51%, #f5f7f9 49%); */
+}
+
+/* intro's styles */
+
+.intro__section {
+  display: flex;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 90px;
+}
+
+.intro__left_part {
+  margin: 140px 0 0 55px;
+}
+
+.intro__title {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 60px;
+  line-height: 66px;
+  color: rgba(9, 17, 51, 1);
+}
+
+.intro__description {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 37px;
+  color: rgba(80, 95, 152, 1);
+  text-align: left;
+  width: 600px;
+  padding-bottom: 30px;
+}
+
+.about__button {
+  width: 200px;
+  margin-top: 30px;
+}
+
+.intro__right_part {
+  background-image: url(/src/assets/Homepage/designer_1.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 67%;
+  height: 100vh;
+  margin-top: -120px;
+
+  z-index: -1;
+}
+
+/* mission's styles */
+.mission__section {
+  display: flex;
+  justify-content: space-between;
+  gap: 70px;
+  margin: 20px 0;
+}
+
+.mission__left_part {
+  background-image: url(/src/assets/Homepage/Rocket-pana\ 1.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 798px;
+  height: 629px;
+  margin-left: 40px;
+}
+
+.mission__right_part {
+  max-width: 800px;
+  padding: 150px 60px;
+}
+
+.mission__title {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 48px;
+  margin-bottom: 30px;
+  color: rgba(9, 17, 51, 1);
+}
+
+.mission__description {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 32px;
+  color: rgba(111, 124, 178, 1);
+  text-align: left;
+  max-width: 900px;
+}
+
+.mission__something {
+  display: flex;
+  flex-direction: row;
+  margin-top: 40px;
+  gap: 2rem;
+}
+
+.mission__something-part {
+  max-width: 320px;
+}
+
+.something__text {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  color: rgba(111, 124, 178, 1);
+  text-align: left;
+  max-width: 500px;
+}
+
+/* styles for section premium*/
+
+.premium__section_background {
+  background-image: url(/src/assets/Homepage/background_premium.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.premium__section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 15em;
+  padding-bottom: 5em;
+}
+
+.premium__title {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 48px;
+  color: rgba(9, 17, 51, 1);
+}
+
+.premium__text {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 36px;
+  color: rgba(111, 124, 178, 1);
+  text-align: center;
+  max-width: 45rem;
+}
+
+.premium__price {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 50px;
+  line-height: 66px;
+  color: rgba(34, 47, 101, 1);
+  margin: 40px auto;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li a {
+  font-family: 'Roboto', sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+
+  padding: 8px 39px;
+  margin-left: 20px;
+  border: 1px solid #1b263b;
+  border-radius: 8px;
+
+  text-decoration: none;
+  color: #fff;
+  background-color: #1b263b;
+  transition: 0.8s;
+}
+
+ul li a:hover {
+  background-color: #415a77;
+  border: 1px solid #415a77;
+  transition: 0.8s;
+}
+
+.premium__btn {
+  margin-left: 0;
+  margin-top: 20px;
+  transition: 0.8s;
+}
+
+.premium__btn:hover {
+  transition: 0.8s;
+}
+
+/* Первый медиа-запрос для больших экранов (больше 1400px) */
+
+@media screen and (min-width: 1401px) {
+  .mission__left-part {
+    margin-top: 50px;
+  }
+
+  .intro__title {
+    margin: 30px auto;
+  }
+
+  .intro__right-part {
+    width: 70%;
+    height: 900px;
+    margin-top: -150px;
+  }
+
+  .mission__left-part {
+    /* Стили для экранов больше чем 1400px */
+    width: 900px;
+    height: 700px;
+    margin-left: 60px;
+  }
+}
+
+/* Второй медиа-запрос для больших экранов (десктопов и т.д.) */
+@media screen and (min-width: 1025px) {
+  .intro__right-part {
+    width: 100vh;
+    height: 826px;
+    margin-top: -140px;
+  }
+
+  .mission__left-part {
+    width: 798px;
+    height: 629px;
+    margin-left: 40px;
+  }
+
+  .intro__left-part {
+    margin: 50px 0;
+  }
+}
+
+/* Третий медиа-запрос для планшетов */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .intro__right-part {
+    width: 100vh;
+    margin-top: -150px;
+  }
+
+  .mission__left-part {
+    width: 600px;
+    height: 450px;
+    margin-left: 20px;
+  }
+
+  .intro__left-part {
+    margin: 50px 0;
+  }
+}
