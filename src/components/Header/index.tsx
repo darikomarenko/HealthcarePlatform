@@ -1,22 +1,23 @@
 import style from './style.module.scss';
 import logo from '../../assets/Header/Logo_hands.png';
+import { Link } from 'react-router-dom';
 
 export default function Header() {
   return (
     <header className={style.header}>
-      <a href="#">
+      <Link to="/">
         <img className={style.header__logo} src={logo} alt="Logo" />
-      </a>
+      </Link>
       <nav>
         <ul>
           <li>
-            <a href="">Скорая помощь</a>
+            <Link to="emergency">Скорая помощь</Link>
           </li>
           <li>
-            <a href="">Я - врач</a>
+            <Link to="">Я - врач</Link>
           </li>
           <li>
-            <a href="">Я - пациент</a>
+            <Link to="">Я - пациент</Link>
           </li>
         </ul>
       </nav>
