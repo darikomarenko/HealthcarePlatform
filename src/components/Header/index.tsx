@@ -14,10 +14,10 @@ export default function Header() {
             <Link to="emergency">Скорая помощь</Link>
           </li>
           <li>
-            <Link to="">Я - врач</Link>
+            <Link to="doctorLogin">Я - врач</Link>
           </li>
           <li>
-            <Link to="">Я - пациент</Link>
+            <Link to="patientLogin">Я - пациент</Link>
           </li>
         </ul>
       </nav>

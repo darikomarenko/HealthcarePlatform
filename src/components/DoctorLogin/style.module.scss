@@ -1,0 +1,206 @@
+/* Styles for main section */
+section {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  gap: 60px;
+}
+
+.registration__form_title {
+  font-size: 48px;
+  margin-bottom: 0;
+}
+
+.registration__form_description {
+  font-size: 17px;
+  max-width: 600px;
+  padding-bottom: 27px;
+}
+
+.registration__form form {
+  display: flex;
+  flex-direction: column;
+
+  width: 475px;
+  margin-left: 70px;
+}
+
+.registration__form label {
+  margin: 10px;
+}
+
+.registration__form input {
+  max-width: 450px;
+  padding: 11px;
+  border-radius: 10px;
+  border: 1px solid #000;
+  background: #f5f5f5;
+  margin-bottom: 3pxж;
+}
+
+.error__message {
+  font-size: 13px;
+  font-weight: 500;
+  max-width: 500px;
+  overflow-wrap: break-word;
+}
+
+.form__button {
+  font-size: 17px;
+  width: 250px;
+  margin: 35px 110px 0;
+
+  padding: 10px 20px;
+  border: 1px solid #1b263b;
+  border-radius: 10px;
+
+  cursor: pointer;
+  color: #fff;
+  background: #1b263b;
+  transition: 0.6s;
+}
+
+.form__button:hover {
+  background-color: #415a77;
+  border: 1px solid #415a77;
+  transition: 0.6s;
+}
+
+.login__info {
+  margin: 50px 140px 0;
+}
+
+.l {
+  margin: 50px 60px 0;
+}
+
+.login__info span {
+  font-weight: 700;
+  color: #1b263b;
+  text-decoration: underline #1b263b;
+}
+
+.quote__section {
+  margin: 20px 0 0 40px;
+}
+
+.quote__section img {
+  max-width: 100%;
+  height: auto;
+}
+
+.blockquote {
+  text-align: center;
+  margin-top: -20px;
+}
+
+.blockquote::before {
+  content: '';
+  display: block;
+  width: 62px;
+  height: 49px;
+
+  position: relative;
+  left: -50px;
+  top: 20px;
+
+  background-repeat: no-repeat;
+  background-image: url(../../assets/Login/quotes1.svg);
+}
+
+.blockquote::after {
+  content: '';
+  display: block;
+  width: 62px;
+  height: 49px;
+
+  position: relative;
+  left: 465px;
+  bottom: 110px;
+
+  background-repeat: no-repeat;
+  background-image: url(../../assets/Login/quotes12.svg);
+}
+
+.quote__description,
+.quote__footer {
+  font-size: 20px;
+  width: 400px;
+  margin: 0;
+  padding-left: 30px;
+}
+
+.quote__footer {
+  margin-top: 20px;
+}
+
+.hidden {
+  display: none;
+}
+
+.password__info {
+  text-align: end;
+  color: #1b263b;
+  margin-bottom: 0;
+  cursor: pointer;
+}
+
+.password__info a {
+  text-decoration: none;
+  color: #1b263b;
+}
+
+#notificationDiv {
+  display: none;
+  font-size: 15px;
+  font-weight: 500;
+  margin-top: 30px;
+  text-align: center;
+
+  margin-top: 20px;
+  color: red;
+  cursor: pointer;
+}
+
+.password__field {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.eye__icon {
+  position: absolute;
+  right: 15px;
+  top: 74%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+/* Медиа-запрос для экранов больше чем 1400px */
+@media screen and (min-width: 1401px) {
+  .registration__form_title {
+    font-size: 40px;
+  }
+
+  .registration__form_description {
+    font-size: 20px;
+  }
+}
+
+/* Медиа-запрос для десктопов (от 1025px до 1400px) */
+@media screen and (min-width: 1025px) and (max-width: 1400px) {
+  .registration__form form {
+    width: 400px;
+  }
+}
+
+/* Медиа-запрос для планшетов (от 768px до 1024px) */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .registration__form form {
+    width: 300px;
+  }
+
+  .login__info {
+    margin: 50px 70px 0;
+  }
+}
