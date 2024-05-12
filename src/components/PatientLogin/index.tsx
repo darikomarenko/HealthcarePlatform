@@ -1,5 +1,6 @@
 import style from './style.module.scss';
 import image from '../../assets/Login/icon1-registration.png';
+import { Link } from 'react-router-dom';
 
 export default function DoctorLogin() {
   return (
@@ -37,10 +38,7 @@ export default function DoctorLogin() {
           </button>
 
           <p className={style.login__info}>
-            Do not have an account.{' '}
-            <a href="registration.html">
-              <span>Register as a patient</span>
-            </a>
+            Do not have an account. <Link to="patientRegister">Register as a patient</Link>
           </p>
         </form>
       </div>
