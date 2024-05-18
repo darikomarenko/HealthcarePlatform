@@ -6,6 +6,7 @@ import Homepage from './components/Homepage';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import DoctorLogin from './components/DoctorLogin';
 import PatientRegister from './components/PatientRegister';
+import DoctorDashboard from './components/DoctorDashboard';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path="doctorLogin" element={<DoctorLogin />} />
         <Route path="patientLogin" element={<PatientLogin />} />
         <Route path="patientLogin/patientRegister" element={<PatientRegister />} />
+        <Route path="doctorDashboard" element={<DoctorDashboard />} />
       </Routes>
       <Footer />
     </Router>

@@ -10,6 +10,11 @@ font-family: 'Roboto', sans-serif; */
   box-sizing: border-box;
 }
 
+main {
+  display: flex;
+  flex-direction: column;
+}
+
 /* Patient Registration Page */
 body {
   font-size: 18px;

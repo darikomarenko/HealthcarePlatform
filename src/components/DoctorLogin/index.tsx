@@ -1,5 +1,6 @@
 import style from './style.module.scss';
 import image from '../../assets/Login/Public health-rafiki 1.png';
+import { Link } from 'react-router-dom';
 
 export default function DoctorLogin() {
   return (
@@ -29,9 +30,11 @@ export default function DoctorLogin() {
             <a href="#">Forgot Password ?</a>
           </p>
           <div id="notificationDiv"></div>
-          <button className={style.form__button} id="loginBtn" type="submit">
-            Login
-          </button>
+          <Link to="/doctorDashboard">
+            <button className={style.form__button} id="loginBtn" type="submit">
+              Login
+            </button>
+          </Link>
         </form>
       </div>
 
